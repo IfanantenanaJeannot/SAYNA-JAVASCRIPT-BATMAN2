@@ -1,0 +1,114 @@
+
+@font-face{
+    font-family:"rajdhani";
+    src:url(../Fonts/Rajdhani-Medium.ttf);
+}
+
+@font-face{
+    font-family:"space-grotesk";
+    src:url(../Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+  background:url(../Illustrations-js/Batgame_1.png) no-repeat center,black;
+  height: 100vh;
+  margin: 0;
+  background-size:cover;
+  background-position:center;
+  width:100%;
+  color:white;
+  font-family:"rajdhani";
+}
+
+nav{
+  width:80%;
+  margin-left:120px;
+  margin-right:150px;
+  padding-top:55px;
+  padding-bottom:60px;
+  height:90px;
+  display:flex;
+  justify-content:space-between;
+}
+nav ul li{
+  list-style:none;
+  display:inline-block;
+  justify-content:space-between;
+}
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  padding-left:30px;
+  text-transformation:uppercase;
+  font-size:20px;
+  font-size:"rajdhani";
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  text-decoration:underline;
+}
+
+
+.scrol{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:fixed;
+  right:80px;
+  top:310px;
+}
+.scrol .social{
+  margin-top:20px;
+}
+.animation{
+  margin-top:120px;
+  padding-bottom:100px;
+  margin-left:150px;
+  margin-right:150px;
+  font-size:32px;
+}
+.img{
+  padding-top:70px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  padding-top:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+}
+.Batgame_2{
+  width:800px;
+  height:auto;
+  position:relative;
+  transform:translate(220px, -10px);
+}
+input{
+  background-color: #7b339b;
+  color: #fff;
+  width:350px;
+  height:50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  position:relative;
+  transform:translate(-350px, 100px);
+  background-image: linear-gradient(to bottom right,#a9a9a9, #cd853f);
+}
+
+.animation {
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s;
+}
+.animation {-webkit-animation-timing-function: linear;}
+
+@-webkit-keyframes mymove {
+  from {left: -70px;}
+  to {left: 150px;}
+}
+

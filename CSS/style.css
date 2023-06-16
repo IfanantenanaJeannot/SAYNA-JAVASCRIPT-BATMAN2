@@ -1,0 +1,198 @@
+
+@font-face{
+    font-family:"rajdhani";
+    src:url(../Fonts/Rajdhani-Medium.ttf);
+}
+
+@font-face{
+    font-family:"space-grotesk";
+    src:url(../Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+body{
+	color:white;
+}
+h1{
+	font-family:"rajdhani", sans-serif;
+}
+nav{
+	margin-left:150px;
+	margin-right:110px;
+	padding-top:55px;
+	padding-bottom:60px;
+	height:90px;
+	display:flex;
+	justify-content:space-between;
+}
+nav ul li{
+	list-style:none;
+	display:inline-block;
+	justify-content:space-between;
+}
+nav ul li a{
+	color:white;
+	padding-left:30px;
+	text-decoration:none;
+	text-transformation:uppercase;
+	font-size:20px;
+  	font-size:"rajdhani";
+  	font-weight:bold;
+}
+nav ul li a:hover{
+  text-decoration:underline;
+}
+
+#hero{
+	width:65%;
+	margin-top:200px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	color:white;
+	padding-bottom:100px;
+	margin-left:120px;
+	margin-right:120px;
+	padding:65px;
+}
+#hero .content h1{
+	font-family:"rajdhani", sans-serif;
+	font-size:36px;
+	margin-top:80px;
+}
+#hero .content p{
+	margin:20px auto;
+	line-height:25px;
+	font-size:18px;
+}
+#hero button{
+	width:200px;
+	height:50px;
+	padding:15px;
+	text-align:center;
+	margin:20px 10px;
+	font-weight:bold;
+	border:none;
+	background:rgb(255, 255, 255,0.3);
+	cursor:pointer;
+	color:white;
+	position:relative;
+	overflow:hidden;
+}
+#hero button a{
+	color:white;
+	text-decoration:none;
+
+}
+.image{
+	padding-top:100px;
+}
+.section{
+	width:70%;
+	margin-left:100px;
+	margin-right:120px;
+	padding:65px;
+}
+#batman-au-cinéma{
+	margin-top:500px;
+}
+.section h1{
+	font-family:"rajdhani", sans-serif;
+	font-size:32px;
+	font-weight:bold;
+}
+.section p{
+	font-weight:normal;
+	font-size:18px;
+	width:95%;
+	text-align:justify;
+}
+
+.bathome13{
+	position:relative;
+	transform: translate(-80px);
+}
+.bathome12{
+	position:absolute;
+	transform:translate(700px, -270px);
+}
+
+
+.scrol{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	position:fixed;
+	right:80px;
+	top:310px;
+}
+.scrol .social{
+	margin-top:20px;
+}
+.gallery{
+	display:flex;
+	justify-content:space-between;
+}
+.description .desc{
+	text-align:center;
+}
+.description .desc p{
+	text-align:center;
+}
+#multimedia .slider-multimedia{
+	display:flex;
+	width:50%;
+	margin:40px auto;
+}
+#multimedia .slider-content{
+	padding:10px;
+	text-align:justify;
+	margin-top:10px;
+	background:#727272;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+#multimedia .slider-content h2{
+	font-size:14px;
+}
+#multimedia .slider-content h3{
+	font-size:12px;
+	font-weight:normal;
+}
+#multimedia .slider-content p{
+	font-size:14px;
+}
+#justiciés .section{
+	width:65%;
+	margin-left:170px;
+	margin-right:120px;
+	padding:65px;
+}
+#justiciés .section h1{
+	font-family:"rajdhani", sans-serif;
+	font-size:32px;
+	font-weight:bold;
+}
+#justiciés .section p{
+	font-weight:normal;
+	font-size:18px;
+	width:95%;
+	text-align:justify;
+}
+#multimedia button{
+	position:relative;
+	top:155px;
+	background:none;
+	border:none;
+}
+#multimedia .right{
+	right:-75%;
+}
+#multimedia .left{
+	left:15%;
+}
+#multimedia .video{
+	margin-left:200px;
+	margin-top:90px;
+}
