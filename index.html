@@ -9,20 +9,27 @@
 <style>
 	body{
 	color:white;
-	font-family: Arial, Helvetica, sans-serif;
-	background:url(Illustrations/Bathome1.png) no-repeat center,black;
-	background-size:cover;
-  	background-position:center;
+	background:url(Illustrations/Bathome1.png) no-repeat,black;
   	width:100%;
   	height:100vh;
 	}
 </style>
 </head>
 <body>
+	<div class="up-bar"></div>
+	<div class="left-bar"></div>
+	<div class="right-bar"></div>
+
+<!----Pop-Upbox---->
+<div class="popup" id="popup"> 
+	<div class="intern"> 
+		<h1>Message reçu</h1>
+	</div>
+</div>
 	<header>
 		<nav>
 			<a href="index.html">
-				<img src="Logos/logohome.png" style="width:120px; cursor:pointer" alt="logo"> 
+				<img class="logo" src="Logos/logohome.png" style="width:120px; cursor:pointer" alt="logo"> 
 			</a>
 			<ul>
 				<li><a href="index.html">HOME</a></li> 
@@ -34,11 +41,11 @@
 	<main>
 							<!-- scrol reseau sociaux-->
 		<div class="scrol"> 
-			<img src="Logos/logo_bat_flèche.png" alt="Fleche">
+			<img class="logo"src="Logos/logo_bat_flèche.png" alt="Fleche">
 			<img class="social" src="Logos/icon_facebook.png" alt="Fleche">
 			<img class="social" src="Logos/icon_ig.png" alt="Fleche">
 			<img class="social" src="Logos/icon_tw.png" alt="Fleche">
-			<img src="Logos/logo_bat_flèche_2.png" alt="Fleche">
+			<img class="logo"src="Logos/logo_bat_flèche_2.png" alt="Fleche">
 
 		</div>
 					<!-- Premier partie -->
@@ -183,37 +190,84 @@
     	
     </section>   
        <!-- Formulaire-->
+    <section id="contact">
     <div class="formulaire">
     	<h2>PRENONS CONTACT</h2>
-    	<form action="">
-    		<label for="email">ADRESSE EMAIL</label>
-    		<input type="email" name="email" placeholder="email"><br>
-    		<label for="newsletter">NEWSLETTER</label><br>
-    		<label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</label><br>
-    		<input type="checkbox" name="email" placeholder="email"><br>
-    		<div>
-    			 <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-    			 <span> 
+    	<form action="" id="sub">
+    		<label class="titre" for="email">ADRESSE EMAIL</label>
+    		<input id="email" type="email" name="email" placeholder="Mon Email">
+    		<span id="invalid" style="color:red;font-style:italic;"></span>
+    		<label class="titre" for="newsletter">NEWSLETTER</label>
+    		<label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</label>
+    		<input type="checkbox" name="email" placeholder="email">
+    		<div class="text">
+    			 <span >Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+    			 <span class="icon"> 
     			 	<img src="Logos/icon_flèche_2.png" alt="Gallery">
     			 </span> 
     		</div>
     		<div>
-    			<p id="demo">Souhaitez-vous recevoir des news</p>
+    			<p class="news">Souhaitez-vous recevoir des news</p>
     		</div>
-    		<a href="">Des films</a>
-    		<a href="">Des comics</a>
-    		<a href="">De tout</a>
-    		<p>MESSAGE</p>
+    		<div class="btn-grp">
+    			<input type="radio" id="films">
+    			<label for="films">Des films</label>
+    			<input type="radio" id="comics">
+    			<label for="comics">Des comics</label> 
+    			<input type="radio" id="tout">
+    			<label for="tout">De tout</label> 
+
+    		</div>
+    		<p class="titre">MESSAGE</p>
     		<textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
 				<input type="submit" value="CONFIRMER">
     	</form> 
     </div>
   </div>
+</section>
+<!----citation--->
+<section id="citations">
+	<div class="container">
+		<div class="guillemet-open">
+			<img src="Logos/icon_guillemets_1.png" alt="Guillemet"> 
+		</div>
 
+		<div class="citation">
+			<div>
+				<p class="citation-text">La seule façon raisonnable de vivre en ce bas monde,</br>c'est en dehors des règles.</p> 
 
-	</main>
-	
-	</footer>
+			</div>
+			<div class="citation-auteur">
+				The Dark Knight : Le Chevalier Noir Le Joker à Batman (2008) 
+			</div>
 
-	</footer>
+		</div>
+
+		<div class="guillemet-close">
+			<img src="Logos/icon_guillemets_2.png" alt="Guillemet"> 
+		</div>
+	</div>
+</section>
+</main>
+
+<!----footer--->
+</footer>
+<div class="container">
+	<div class="text-footer"> 
+		<img src="Logos/icon_WB.png" alt="Logo warner">
+		<span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
+	</div>
+	<div class="social-footer">
+		<a class="social-item" href="">
+			<img src="Logos/logo_sayna_white.png" alt="Logo warner">
+			<img src="Logos/icon_x.png" alt="Logo warner">
+			<img src="Logos/icon_DC.png" alt="Logo warner">
+		</a>
+		<a class="social-item" href=""><img src="Logos/icon_facebook.png" alt=""></a>
+		<a class="social-item" href=""><img src="Logos/icon_ig.png" alt=""></a>
+		<a class="social-item"href=""><img src="Logos/icon_tw.png" alt=""></a>
+	</div>
+</div>
+</footer>
+<script src="Javascript/popUp.js"></script>
 </body>
