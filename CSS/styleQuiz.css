@@ -1,75 +1,197 @@
 @font-face{
-    font-family:"rajdhani";
-    src:url(../Fonts/Rajdhani-Medium.ttf);
+  font-family:"rajdhani";
+  src:url(../Fonts/Rajdhani-Medium.ttf);
 }
 
 @font-face{
-    font-family:"space-grotesk";
-    src:url(../Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-family:"space-grotesk";
+  src:url(../Fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  background-color: black;
-  font-family: "rajdhani"; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  color:white;
+background:url(../Illustrations-js/Batgame_1.png) no-repeat center,black;
+font-family: "rajdhani"; 
+height: 100vh;
+margin: 0;
+color:white;
+}
+
+.up-bar{
+border-top:2px solid #727272;
+position:relative;
+top:132px;
+width:85%;
+left:102px;
+}
+.left-bar{
+border-left:2px solid #727272;
+position:absolute;
+height:190vh;
+left:100px;
+
+}
+.right-bar{
+border-right:2px solid #727272;
+position:absolute;
+float:right;
+height:190vh;
+right:83px;
+}
+
+nav{
+width:80%;
+margin-left:120px;
+margin-right:150px;
+padding-top:55px;
+padding-bottom:60px;
+height:90px;
+display:flex;
+justify-content:space-between;
+}
+nav ul li{
+list-style:none;
+display:inline-block;
+justify-content:space-between;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+padding-left:30px;
+text-transformation:uppercase;
+font-size:20px;
+font-size:"rajdhani";
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:yellow;
+text-decoration:underline;
+}
+
+.logo:hover{
+-webkit-filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+
+}
+
+.social:hover{
+-webkit-filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+
+}
+
+.animation{
+margin-top:280px;
+padding-bottom:60px;
+margin-left:150px;
+margin-right:150px;
+font-size:32px;
+}
+
+.anim{
+font-size:32px;
+font-family:'rajdhani';
+}
+
+.animation {
+font-weight: bold;
+position: relative;
+-webkit-animation: mymove 5s;
+}
+.animation {-webkit-animation-timing-function: linear;}
+
+@-webkit-keyframes mymove {
+from {left:0;}
+to {left: 150px;}
+}
+
+.scrol{
+display:flex;
+flex-direction:column;
+align-items:center;
+position:fixed;
+right:30px;
+top:310px;
+}
+
+.scrol .social{
+margin-top:20px;
 }
 
 .quiz-container {
-  background-color: black;
-  width: 500px;
-  max-width: 95vw;
-  overflow: hidden;
+width: 500px;
+display: block;
+align-items: center;
+justify-content: center;
+max-width: 95vw;
+margin-left:400px;
+margin-top:0px;
 }
 
 .quiz-header {
-  padding: 1rem;
+padding: 1rem;
 }
 
 h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
+padding: 1rem;
+margin: 50;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+main ul {
+list-style-type: none;
+padding: 0;
 }
 
-ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  background-color:#a9a9a9;
-  width:100%;
-  height:40px;
-  padding-top:7px;
-  padding-bottom:7px;
+main ul li {
+font-size: 1.2rem;
+margin: 1rem 0;
+background-color:#a9a9a9;
+width:100%;
+height:40px;
+padding-top:7px;
+padding-bottom:7px;
 }
 
-ul li label {
-  cursor: pointer;
+main ul li label {
+cursor: pointer;
 }
 
 button {
-  background-image: linear-gradient(to bottom right,#a9a9a9, #cd853f);
-  color: #fff;
-  border: none;
-  display: block;
-  width: 60%;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-family: inherit;
-  padding: 1.1rem;
-  margin-top:80px;
-  margin-left:15px;
+background-image: linear-gradient(to bottom right,#a9a9a9, #cd853f);
+color: #fff;
+border: none;
+display: block;
+width: 60%;
+cursor: pointer;
+font-size: 1.1rem;
+font-family: inherit;
+padding: 1.1rem;
+margin-top:50px;
+margin-left:15px;
+}
+
+/*footer*/
+
+footer{
+margin-top:182px;
+}
+.text-footer{
+text-align:center;
+font-size:12px;
+}
+.social-footer{
+text-align:center;
+margin-top:50px;
+}
+.social-item{
+padding:15px;
+}
+.social-item:hover{
+-webkit-filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+filter:invert(44%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+
 }

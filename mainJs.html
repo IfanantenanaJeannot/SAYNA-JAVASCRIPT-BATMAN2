@@ -8,22 +8,29 @@
 <html>
 <body>
 
-  <nav>
+  <div class="up-bar"></div>
+  <div class="left-bar"></div>
+  <div class="right-bar"></div>
+  <header>
+    <nav>
       <a href="index.html">
-        <img src="Logos/logohome.png" style="width:120px; cursor:pointer" alt="logo"> 
+        <img class="logo" src="Logos/logohome.png" style="width:120px; cursor:pointer" alt="logo"> 
       </a>
       <ul>
         <li><a href="index.html">HOME</a></li> 
         <li><a href="mainJs.html">GAME</a></li>
       </ul>
+
     </nav>
+  </header> 
   <main>
+              <!-- scrol reseau sociaux-->
     <div class="scrol"> 
-      <img src="Logos/logo_bat_flèche.png" alt="Fleche">
+      <img class="logo"src="Logos/logo_bat_flèche.png" alt="Fleche">
       <img class="social" src="Logos/icon_facebook.png" alt="Fleche">
       <img class="social" src="Logos/icon_ig.png" alt="Fleche">
       <img class="social" src="Logos/icon_tw.png" alt="Fleche">
-      <img src="Logos/logo_bat_flèche_2.png" alt="Fleche">
+      <img class="logo"src="Logos/logo_bat_flèche_2.png" alt="Fleche">
 
     </div>
     <div class="animation">
@@ -40,6 +47,25 @@
         <img class="Batgame_2" src="Illustrations-js/Batgame_2.png" alt="batman"> 
         <input type="button" value="DÉMARRER LE QUIZ" onclick="newDoc()">
 </main>
+
+<footer>
+<div class="container">
+  <div class="text-footer"> 
+    <img src="Logos/icon_WB.png" alt="Logo warner">
+    <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
+  </div>
+  <div class="social-footer">
+    <a class="social-item" href="">
+      <img src="Logos/logo_sayna_white.png" alt="Logo warner">
+      <img src="Logos/icon_x.png" alt="Logo warner">
+      <img src="Logos/icon_DC.png" alt="Logo warner">
+    </a>
+    <a class="social-item" href=""><img src="Logos/icon_facebook.png" alt=""></a>
+    <a class="social-item" href=""><img src="Logos/icon_ig.png" alt=""></a>
+    <a class="social-item"href=""><img src="Logos/icon_tw.png" alt=""></a>
+  </div>
+</div>
+</footer>
 
 <script>
 function newDoc() {

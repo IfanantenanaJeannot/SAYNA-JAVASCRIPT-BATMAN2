@@ -171,9 +171,3 @@ submitButton.addEventListener("click", () => {
 });
 
 
-
-/*quiz.innerHTML = `
-            <h2>${score}/${quizData.length} questions correctly</h2>
-            <p>kjsdmflqkjdmlfjqmlfjoezrarkjarjmlakjr</p>
-            <button onclick="history.go(0)">Play Again</button>
-        `;*/
