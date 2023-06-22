@@ -123,13 +123,21 @@ margin-top:20px;
 }
 
 .quiz-container {
-width: 500px;
+width: 80%;
 display: block;
 align-items: center;
 justify-content: center;
 max-width: 95vw;
 margin-left:400px;
 margin-top:0px;
+}
+
+.card-img{
+  display:flex;
+  width: 300px;  
+}
+.card-quest{
+  display: flex;
 }
 
 .quiz-header {
