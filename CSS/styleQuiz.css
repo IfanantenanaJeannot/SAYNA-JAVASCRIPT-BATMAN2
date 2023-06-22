@@ -128,16 +128,17 @@ display: block;
 align-items: center;
 justify-content: center;
 max-width: 95vw;
-margin-left:400px;
+margin-left:300px;
 margin-top:0px;
 }
-
-.card-img{
+.quest-img{
   display:flex;
+}
+.card-img{
   width: 300px;  
 }
 .card-quest{
-  display: flex;
+margin-left: 30px;
 }
 
 .quiz-header {
