@@ -138,7 +138,7 @@ submitButton.addEventListener("click", () => {
       var scr = score;
   if (score < 6) {
     quiz.innerHTML = `
-            <h2>${score}/${quizData.length} tu dois améliorer</h2>
+            <h2>${score}/${quizData.length} C'EST PAS TOUT A FAIT CA...</h2>
             <p>Oula! Heureusement que le Riddler est sous les verrous...Il faut que vous vous repassiez les films, cette fois en enlevant peut-être le masque qui vous a bloqué la vue! Aller, rien n'est perdu!</p>
             <button onclick="history.go(0)">Play Again</button>`;
   } else if (score <11) {
@@ -148,7 +148,7 @@ submitButton.addEventListener("click", () => {
             <button onclick="history.go(0)">Play Again</button>`;
   } else {
     quiz.innerHTML = `
-            <h2>${score}/${quizData.length} bravo</h2>
+            <h2>${score}/${quizData.length} BRAVO!</h2>
             <p>Vous êtes véritablement un super fan de l'univers de Batman! Comics, films, rien ne vous échappe.Bruce Wayne a de quoi être fier, Gotham est en paix et Batman peut prendre sa retraite, vous veillez au grains!</p>
             <button onclick="history.go(0)">Voir resultat</button>`;
   }
